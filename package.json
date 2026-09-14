@@ -1,0 +1,29 @@
+{
+  "name": "fingerprint-new-account-fraud-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "dev": "node --watch server/server.js",
+    "start": "node server/server.js",
+    "reset-db": "node -e \"import('./server/db.js').then(m => m.resetDb())\""
+  },
+  "keywords": [],
+  "author": "Keshia Rose",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "puppeteer": "^25.11.0"
+  },
+  "dependencies": {
+    "@fastify/static": "^10.1.3",
+    "@fingerprint/node-sdk": "^7.7.1",
+    "better-sqlite3": "^13.0.3",
+    "dotenv": "^17.4.2",
+    "fastify": "^5.12.4"
+  },
+  "allowScripts": {
+    "puppeteer@25.11.0": true,
+    "better-sqlite3@13.0.3": true
+  }
+}
